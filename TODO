@@ -1,0 +1,78 @@
+Système d'inventaire
+Système de dialogue (avec réponse multiples)
+Système de combat
+Système de map
+Système de déplacement
+Système d'actions (ce que peut entre l'utilisateur)
+Système de quête
+Système de "cinématique"
+Système de vente/échange
+Système de menu
+Système de sauvegarde
+
+
+GUI pour créer les fichiers nécessaires.
+
+=======================
+Les entités possibles:
+
+Enemis:
+->Nom
+->combats
+->carac (pdv, etc..)
+->loot possible (objet)
+->validation de quête
+->type
+->condition (pour l'apparition)
+
+Objets
+->Nom
+->Carac
+->Description
+->Prix unitaire
+->Stack (combien par emplacement du sac)
+
+Pnj:
+->Nom
+->Dialogue
+->select()
+->
+
+Dialogue:
+->Nom
+->Text
+->Réponses -> trigger une action
+
+Quête:
+->Nom
+->Récompense (objet) // l'argent est un objet
+->Description
+->Etat (En cours / Réussie / Echouée / A accepter)
+
+Inventaire:
+->Nombre d'emplacements
+->Etat (Plein ou non)
+->Liste d'éléments
+
+Lieu
+->Nom
+->Description
+->type -> pour les monstres ?
+->lieux voisins (vecteur)
+
+=================================
+Actions:
+->Activer/Modifier une quête
+->Modifier l'inventaire
+->Modifier les carac d'un objet
+->Lancer un dialogue
+
+Conditions:
+->Possession d'une quantité d'objets (liste)
+->Position (lieu)
+->Caractéristique
+->
+
+
+
+
